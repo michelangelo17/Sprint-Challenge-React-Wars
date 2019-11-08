@@ -1,14 +1,22 @@
 import React from 'react';
+import { Container, H2, P } from '../../stylesAndEmotions/GlobalEmotions';
 
 const CardMaker = props => {
   return (
-    <div>
-      <h2>{props.charName}</h2>
-      <p>{props.born}</p>
-      <p>{props.homeworld}</p>
+    <Container 
+      fd='c'
+      jc='c'
+      width='25%'
+      bgColor='white'
+      margin='3%'
+      br='10px'
+    >
+      <H2 textAlign='center'>{props.charName}</H2>
+      <P textAlign='center'>Born: {props.born}</P>
+      {/* <p>{props.homeworld}</p> */}
       {/* <p>{starships}</p>
       <p>{vehicles}</p> */}
-    </div> 
+    </Container> 
   );
 } 
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+import './stylesAndEmotions/App.css';
 import StarWarsData from './components/APIs/StarWarsData'
-import Cards from './components/cardMaker/Cards';
+import Cards from './components/cards/Cards';
+import { Container, H1 } from './stylesAndEmotions/GlobalEmotions';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,10 +14,10 @@ const App = () => {
   const characterArray = StarWarsData();
   console.log(characterArray);
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <Container fd='c' jc='c'>
+      <H1 textAlign='center'>React Wars</H1>
       <Cards characterArray={characterArray} />
-    </div>
+    </Container>
   );
 }
 

@@ -2,11 +2,7 @@ import { useEffect, useState } from 'react';
 import Axios from 'axios';
 
 const StarWarsData = () => {
-  const [characters, setCharacters] = useState([{
-    name: 'Temp',  
-    birth_year: 'Temp',
-    homeworld: 'Temp'
-  }]);
+  const [characters, setCharacters] = useState([]);
   useEffect(() => {
     Axios.get(
       'https://swapi.co/api/people/'

@@ -1,10 +1,18 @@
 import React from 'react';
-import CardMaker from './CardMaker';
+import CardMaker from '../cardMaker/CardMaker';
+import { Container } from '../../stylesAndEmotions/GlobalEmotions'
+
 
 const Cards = props => {
   const characterArray = props.characterArray;
   return (
-    <div>
+    <Container 
+      width='100%'
+      fd='r'
+      jc='c'
+      fw='wrap'
+      shadow='y'
+    >
       {characterArray.map((character, index) => (
         <CardMaker 
           charName={character.name} 
@@ -13,7 +21,7 @@ const Cards = props => {
           key={index}
         />
       ))}
-    </div>
+    </Container>
   );
 } 
 
