@@ -1,6 +1,6 @@
 import React from 'react';
 import CardMaker from '../cardMaker/CardMaker';
-import { Container } from '../../stylesAndEmotions/GlobalEmotions'
+import { Container } from '../../../stylesAndEmotions/GlobalEmotions'
 
 
 const Cards = props => {
@@ -11,7 +11,6 @@ const Cards = props => {
       fd='r'
       jc='c'
       fw='wrap'
-      shadow='y'
     >
       {characterArray.map((character, index) => (
         <CardMaker 

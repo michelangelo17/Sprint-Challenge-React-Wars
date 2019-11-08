@@ -1,8 +1,8 @@
 import React from 'react';
-import './stylesAndEmotions/App.css';
+import '../stylesAndEmotions/App.css';
 import StarWarsData from './components/APIs/StarWarsData'
 import Cards from './components/cards/Cards';
-import { Container, H1 } from './stylesAndEmotions/GlobalEmotions';
+import { Container, H1 } from '../stylesAndEmotions/GlobalEmotions';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
