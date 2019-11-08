@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import StarWarsData from './components/APIs/StarWarsData'
+import Cards from './components/cardMaker/Cards';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Cards characterArray={characterArray} />
     </div>
   );
 }
