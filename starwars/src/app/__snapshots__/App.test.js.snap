@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for App 1`] = `
+<div
+  className="css-nfg1w1"
+>
+  <h1
+    className="css-1462mdk"
+  >
+    React Wars
+  </h1>
+  <div
+    className="css-1b2hany"
+    width="100%"
+  />
+</div>
+`;
